@@ -17,6 +17,9 @@ The app demonstrates **authentication, API integration, navigation, local storag
   - Users can save events in Local Storage / Firebase under their account.
 - **Profile Page**
   - Displays the logged-in user’s registered events list.
+- **Link to the project**
+  - https://event-crafter-quest.lovable.app.
+    
 
 ---
 
