@@ -14,7 +14,60 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      profiles: {
+        Row: {
+          created_at: string
+          email: string | null
+          id: string
+          updated_at: string
+          user_id: string
+        }
+        Insert: {
+          created_at?: string
+          email?: string | null
+          id?: string
+          updated_at?: string
+          user_id: string
+        }
+        Update: {
+          created_at?: string
+          email?: string | null
+          id?: string
+          updated_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
+      registered_events: {
+        Row: {
+          event_description: string | null
+          event_id: string
+          event_image: string | null
+          event_title: string
+          id: string
+          registered_at: string
+          user_id: string
+        }
+        Insert: {
+          event_description?: string | null
+          event_id: string
+          event_image?: string | null
+          event_title: string
+          id?: string
+          registered_at?: string
+          user_id: string
+        }
+        Update: {
+          event_description?: string | null
+          event_id?: string
+          event_image?: string | null
+          event_title?: string
+          id?: string
+          registered_at?: string
+          user_id?: string
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
