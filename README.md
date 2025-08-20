@@ -19,7 +19,30 @@ The app demonstrates **authentication, API integration, navigation, local storag
   - Displays the logged-in user’s registered events list.
 - **Link to the project**
   - https://event-crafter-quest.lovable.app.
-    
+
+## 📱 Mobile App (APK Generation)
+
+This project is configured with Capacitor for mobile app development. To generate an APK:
+
+### Prerequisites
+- Node.js installed
+- Android Studio installed
+- Git
+
+### Steps to Generate APK:
+1. **Export to GitHub**: Use the "Export to Github" button in Lovable
+2. **Clone the repository**: `git clone [your-repo-url]`
+3. **Install dependencies**: `npm install`
+4. **Add Android platform**: `npx cap add android`
+5. **Update native dependencies**: `npx cap update android`
+6. **Build the web app**: `npm run build`
+7. **Sync to native platform**: `npx cap sync`
+8. **Open in Android Studio**: `npx cap run android`
+9. **Generate APK**: In Android Studio, go to Build > Build Bundle(s) / APK(s) > Build APK(s)
+
+The APK will be generated in `android/app/build/outputs/apk/debug/app-debug.apk`
+
+For production APK, use Build > Generate Signed Bundle / APK in Android Studio.
 
 ---
 
