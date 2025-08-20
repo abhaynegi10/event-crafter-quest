@@ -1,7 +1,7 @@
 import type { CapacitorConfig } from '@capacitor/cli';
 
 const config: CapacitorConfig = {
-  appId: 'app.lovable.3e7012fad685410d962c838aa54a2cc1',
+  appId: 'com.lovable.eventcrafterquest',
   appName: 'event-crafter-quest',
   webDir: 'dist',
   server: {
